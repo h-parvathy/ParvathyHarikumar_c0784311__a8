@@ -4,8 +4,10 @@ import java.util.ArrayList;
 public class FeelsLikeTemperature {
     public static void main(String[] args) {
 
+        // For Dialog box
         JFrame f;
         f = new JFrame();
+        // input - to ask user if he wants to continue or stop.
         int input = JOptionPane.showConfirmDialog(null,
                 "Hi! Wanna know what temperature feels like today??");
         while(input==0) {
@@ -22,7 +24,6 @@ public class FeelsLikeTemperature {
 
             input = JOptionPane.showConfirmDialog(null,
                     "Hi! Wanna know what temperature feels like today??");
-
 
         }
 

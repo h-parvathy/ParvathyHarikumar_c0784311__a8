@@ -8,6 +8,7 @@ public class TemperatureUpdate {
     ArrayList<Double> temp = new ArrayList<Double>(); //temperature in Celsius
     Double feelLikeTemp;
 
+    // Constructor method
     public TemperatureUpdate(Double temp, Double windSpeed, String day) {
         this.windSpeed.add(windSpeed);
         this.temp.add(temp);
@@ -15,12 +16,14 @@ public class TemperatureUpdate {
         this.feelLikeTemp = calcFeelLikeTemp();
     }
 
+    //Calculate Fell Like Temperature
     public double calcFeelLikeTemp()
     {
         int size = day.size(); // latest updated
         return ((this.temp.get(size-1)) * (this.windSpeed.get(size-1)));
     }
 
+    // Final String to display
    public StringBuilder makeString(){
 
        for(int i =0; i<day.size();i++) {
